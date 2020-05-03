@@ -29,7 +29,7 @@ public class ProcessStepExample implements WorkflowProcess {
   String payloadType = workItem.getWorkflowData().getPayloadType();
   // Check type of payload; there are two - JCR_PATH and JCR_UUID
   if (StringUtils.equals(payloadType, "JCR_PATH")) {
-   log.info("Payload type: {}", payloadType);
+   log.info("Payload type : {}", payloadType);
    // Get the JCR path from the payload
    String path = workItem.getWorkflowData().getPayload().toString();
    log.info("Payload path: {}", path);
